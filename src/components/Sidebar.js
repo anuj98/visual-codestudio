@@ -11,7 +11,7 @@ export default function Sidebar(props) {
 
     return (
       <Drag dataItem={{ type: type, key: key }}>
-        <Step name={d.name} type={type} iconName={d.icon} color={color} onClick={props.onStepClick} />
+        <Step option={key} name={d.name} type={type} iconName={d.icon} color={color} onStepClick={props.onStepClick} />
       </Drag>
     );
   }
@@ -29,7 +29,6 @@ export default function Sidebar(props) {
       {getStepToRender(Types.Motion, Motion.TurnRight, "white")}
       <div className="font-bold"> {"Control"} </div>
       {getStepToRender(Types.Controls, Controls.Wait)}
-      {getStepToRender(Types.Controls, Controls.Repeat)}
     </div>
   );
 }

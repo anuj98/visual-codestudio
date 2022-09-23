@@ -26,7 +26,6 @@ export const Looks = {
 
 export const Controls = {
   Wait: 0,
-  Repeat: 1,
 };
 
 /**
@@ -54,10 +53,6 @@ export const data = [
         key: Controls.Wait,
         name: "wait 1 seconds",
       },
-      {
-        key: Controls.Repeat,
-        name: "repeat 10",
-      },
     ],
   },
   {
@@ -78,16 +73,16 @@ export const data = [
     children: [
       {
         key: Motion.Move,
-        name: "Move 10 steps",
+        name: "move 10 steps",
       },
       {
         key: Motion.TurnLeft,
-        name: "Turn {0} 15 degrees",
+        name: "turn {0} 15 degrees",
         icon: "undo",
       },
       {
         key: Motion.TurnRight,
-        name: "Turn {0} 15 degrees",
+        name: "turn {0} 15 degrees",
         icon: "redo",
       },
     ],

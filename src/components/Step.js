@@ -56,7 +56,7 @@ export default function Step(props) {
     <div
       className={getStepWrapperStyle()}
       dangerouslySetInnerHTML={{ __html: getStepHtml() }}
-      onClick={props.onClick ? props.onClick : undefined}
+      onClick={() => props.onStepClick?.(props.type, props.option ?? -1)}
     ></div>
   );
 }

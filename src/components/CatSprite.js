@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CatSprite({ className }) {
+export default function CatSprite(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +9,8 @@ export default function CatSprite({ className }) {
       viewBox="0.3210171699523926 0.3000000357627869 95.17898101806641 100.04156036376953"
       version="1.1"
       xmlSpace="preserve"
-      className={`${className}`}
+      style={props.styles}
+      onClick={() => props.onSpriteClick?.()}
     >
       <g>
         <g id="Page-1" stroke="none" fillRule="evenodd">
